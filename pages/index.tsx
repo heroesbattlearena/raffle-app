@@ -61,7 +61,7 @@ const Home: NextPage = () => {
         <Flex justifyContent={"center"} alignItems={"center"} p={"5%"}>
           <Stack spacing={10}>
             <Box>
-              <Text fontSize={"xl"}>Raffle App</Text>
+              <Text fontSize={"xl"}>HBA Raffle App</Text>
               <Text fontSize={"4xl"} fontWeight={"bold"}>Buy a ticket to win the NFT Prize!</Text>
             </Box>
             
