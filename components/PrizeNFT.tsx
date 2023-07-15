@@ -35,8 +35,8 @@ export default function PrizeNFT() {
                         <Box>
                             <ThirdwebNftMedia
                                 metadata={nft?.metadata!}
-                                height="100%"
-                                width="100%"
+                                height="50%"
+                                width="50%"
                             />
                         </Box>
                         <Box>
