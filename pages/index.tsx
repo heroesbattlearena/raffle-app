@@ -123,11 +123,13 @@ const Home: NextPage = () => {
         <Text fontSize={"xl"}>Current Raffle Participants:</Text>
         <CurrentEntries/>
       </Stack>
-      <Box justifyContent={"center"} alignItems={"center"} p={"5%"}>
+      <Flex justifyContent={"center"} alignItems={"center"}>
+        <Box>
           <Link href={"https://heroesbattlearena.online"}>
             <Text fontSize={"l"} fontWeight={"bold"}>2023 (c) Heroes Battle Arena</Text>
           </Link>
-      </Box>
+        </Box>
+      </Flex>
     </Container>
   );
 };
