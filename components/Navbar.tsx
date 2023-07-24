@@ -29,9 +29,12 @@ export default function Navbar() {
                             <Text fontWeight={"bold"} mr={10}>Admin</Text>
                         </Link>
                     )}
+                    <Link href={"https://linktr.ee/heroesbattlearn"}>
+                            <Text fontWeight={"bold"} mr={10}>Linktree</Text>
+                    </Link>
                     <Link href={"https://zealy.io/c/heroesbattlearena"}>
                             <Text fontWeight={"bold"} mr={10}>Zealy</Text>
-                        </Link>
+                    </Link>
                     <ConnectWallet />
                 </Flex>
             </Flex>
