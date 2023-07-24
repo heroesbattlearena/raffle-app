@@ -21,7 +21,7 @@ export default function Navbar() {
         <Container maxW={"1440px"} py={8}>
             <Flex flexDirection={"row"} justifyContent={"space-between"} alignItems={"center"}>
                 <Link href={"/"}>
-                    <Text fontSize={"xl"} fontWeight={"bold"}>HBA Raffle App</Text>
+                    <Text fontSize={"xl"} fontWeight={"bold"}>Heroes Battle Arena Raffle</Text>
                 </Link>
                 <Flex flexDirection={"row"} alignItems={"center"}>
                     {!adminLoading && address === admin && (
@@ -29,6 +29,9 @@ export default function Navbar() {
                             <Text fontWeight={"bold"} mr={10}>Admin</Text>
                         </Link>
                     )}
+                    <Link href={"https://zealy.io/c/heroesbattlearena"}>
+                            <Text fontWeight={"bold"} mr={10}>Zealy</Text>
+                        </Link>
                     <ConnectWallet />
                 </Flex>
             </Flex>
