@@ -70,7 +70,7 @@ const Home: NextPage = () => {
 
             <Box>
               <Link href={"https://zealy.io/c/heroesbattlearena"}>
-                <Text fontSize={"xl"}>Add your wallet in Zealy</Text>
+                <Text fontSize={"xl"} fontWeight={"bold"}>Add your wallet in Zealy</Text>
               </Link>
             </Box>
             
