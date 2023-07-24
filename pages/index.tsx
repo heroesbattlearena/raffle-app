@@ -53,8 +53,8 @@ const Home: NextPage = () => {
           ) : (
             <MediaRenderer
               src={HERO_IMAGE_URL}
-              width="100%"
-              height="100%"
+              width="70%"
+              height="70%"
             />
           )}
           
@@ -123,6 +123,11 @@ const Home: NextPage = () => {
         <Text fontSize={"xl"}>Current Raffle Participants:</Text>
         <CurrentEntries/>
       </Stack>
+      <Box>
+          <Link href={"https://heroesbattlearena.online"}>
+            <Text fontSize={"l"} fontWeight={"bold"}>2023 (c) Heroes Battle Arena</Text>
+          </Link>
+      </Box>
     </Container>
   );
 };
