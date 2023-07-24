@@ -61,11 +61,17 @@ const Home: NextPage = () => {
         <Flex justifyContent={"center"} alignItems={"center"} p={"5%"}>
           <Stack spacing={10}>
             <Box>
-              <Text fontSize={"xl"}>HBA Raffle App</Text>
-              <Text fontSize={"4xl"} fontWeight={"bold"}>Buy a ticket to win the NFT Prize!</Text>
+              <Text fontSize={"xl"}>Heroes Battle Arena Raffle</Text>
+              <Text fontSize={"4xl"} fontWeight={"bold"}>Buy a ticket to win the NFT and Cash Prizes!</Text>
             </Box>
             
-            <Text fontSize={"xl"}>Buy entries for a chance to win the NFT! Winner will be selected and transferred the NFT. The more entries the higher chance you have of winning the prize.</Text>
+            <Text fontSize={"xl"}>Buy entries for a chance to win the NFT! The winner will be selected and transferred the NFT and a cash prize. The more entries the higher chance you have of winning the prize.</Text>
+
+            <Box>
+              <Link href={"https://zealy.io/c/heroesbattlearena"}>
+                <Text fontSize={"xl"}>Add your wallet in Zealy</Text>
+              </Link>
+            </Box>
             
             <LotteryStatus status={lotteryStatus}/>
             {!ticketCostLoading && (
