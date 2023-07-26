@@ -17,7 +17,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Heroes Battle Arena Raffle | Buy and win</title>
         <meta name="description" content="Your meta description here" />
         <meta name="facebook-domain-verification" content="7qvotamngngrhn1rkyicuwcbn8r3y6" />
-        <!-- Meta Pixel Code -->
         <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -33,7 +32,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <noscript><img height="1" width="1" style="display:none"
         src="https://www.facebook.com/tr?id=835022581502548&ev=PageView&noscript=1"
         /></noscript>
-        <!-- End Meta Pixel Code -->
         {/* Add any other meta tags, CSS, or scripts you need in the <head></head> section */}
       </Head>
       <ThirdwebProvider activeChain={activeChain}>
