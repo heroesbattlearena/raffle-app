@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         {/* Add your meta tags, title, etc. within the Head component */}
-        <title>Buy and Win | Heroes Battle Arena Raffle</title>
+        <title>Buy & Win with Heroes Battle Arena</title>
         <meta name="description" content="Heroes Battle Arena Game and Raffle" />
         <meta name="facebook-domain-verification" content="7qvotamngngrhn1rkyicuwcbn8r3y6" />
         {/* Add any other meta tags, CSS, or scripts you need in the <head></head> section */}
