@@ -137,7 +137,7 @@ const Home: NextPage = () => {
 };
 
 //export default Home;
-export default function Home() {
+export default Home() {
   return (
     <div>
       <Head>
