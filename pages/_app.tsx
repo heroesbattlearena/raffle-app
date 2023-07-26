@@ -2,7 +2,7 @@ import type { AppProps } from "next/app";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import { ChakraProvider } from "@chakra-ui/react";
 import Navbar from "../components/Navbar";
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet";
 
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.
