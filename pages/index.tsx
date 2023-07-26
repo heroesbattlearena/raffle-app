@@ -47,12 +47,10 @@ const Home: NextPage = () => {
   }
 
   return (
-    <>
+    <Container maxW={"1440px"}>
     <Head>
                 <title>Index Page</title>
     </Head>
-      </>
-    <Container maxW={"1440px"}>
       <SimpleGrid columns={2} spacing={4} minH={"60vh"}>
         <Flex justifyContent={"center"} alignItems={"center"}>
           {lotteryStatus ? (
