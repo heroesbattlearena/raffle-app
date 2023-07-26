@@ -1,12 +1,11 @@
+// pages/_app.js
 import type { AppProps } from "next/app";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import { ChakraProvider } from "@chakra-ui/react";
-import Head from "next/head"; // Import the Head component from Next.js
+import Head from "next/head";
+import NextScript from "next/script"; // Import NextScript
 import Navbar from "../components/Navbar";
 
-// This is the chain your dApp will work on.
-// Change this to the chain your app is built for.
-// You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
 const activeChain = "polygon";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -14,8 +13,8 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         {/* Add your meta tags, title, etc. within the Head component */}
-        <title>Heroes Battle Arena Raffle | Buy and win</title>
-        <meta name="description" content="Your meta description here" />
+        <title>Buy and Win | Heroes Battle Arena Raffle</title>
+        <meta name="description" content="Heroes Battle Arena Game and Raffle" />
         <meta name="facebook-domain-verification" content="7qvotamngngrhn1rkyicuwcbn8r3y6" />
         {/* Add any other meta tags, CSS, or scripts you need in the <head></head> section */}
       </Head>
@@ -25,6 +24,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
         </ChakraProvider>
       </ThirdwebProvider>
+      {/* Include the facebook-pixel.html */}
+      <NextScript strategy="lazyOnload" src="/facebook-pixel.html" />
     </>
   );
 }
