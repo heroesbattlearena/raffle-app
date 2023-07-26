@@ -8,6 +8,7 @@ import PrizeNFT from "../components/PrizeNFT";
 import { useState } from "react";
 import CurrentEntries from "../components/CurrentEntries";
 import Link from "next/link";
+import Head from "next/head";
 
 
 const Home: NextPage = () => {
@@ -135,4 +136,17 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+//export default Home;
+export default function Home() {
+  return (
+    <div>
+      <Head>
+        <title>This page has a title 🤔</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+
+      <h1>This page has a title 🤔</h1>
+    </div>
+  )
+}
