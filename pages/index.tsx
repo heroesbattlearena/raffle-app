@@ -50,7 +50,6 @@ const Home: NextPage = () => {
     <Head>
       <title>My page</title>
       <meta name="facebook-domain-verification" content="7qvotamngngrhn1rkyicuwcbn8r3y6" />
-        <!-- Meta Pixel Code -->
         <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -66,7 +65,6 @@ const Home: NextPage = () => {
         <noscript><img height="1" width="1" style="display:none"
         src="https://www.facebook.com/tr?id=835022581502548&ev=PageView&noscript=1"
         /></noscript>
-        <!-- End Meta Pixel Code -->
     </Head>
     <Container maxW={"1440px"}>
       <SimpleGrid columns={2} spacing={4} minH={"60vh"}>
