@@ -8,7 +8,7 @@ import PrizeNFT from "../components/PrizeNFT";
 import { useState } from "react";
 import CurrentEntries from "../components/CurrentEntries";
 import Link from "next/link";
-import MetaPixel from "../const/metaPixel"
+import MetaPixel from "../const/metaPixel";
 
 
 const Home: NextPage = () => {
