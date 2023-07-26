@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import { ChakraProvider } from "@chakra-ui/react";
+import Head from "next/head"; // Import the Head component from Next.js
 import Navbar from "../components/Navbar";
 
 // This is the chain your dApp will work on.
@@ -10,12 +11,20 @@ const activeChain = "polygon";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider activeChain={activeChain}>
-      <ChakraProvider>
-        <Navbar />
-        <Component {...pageProps} />
-      </ChakraProvider>
-    </ThirdwebProvider>
+    <>
+      <Head>
+        {/* Add your meta tags, title, etc. within the Head component */}
+        <title>Your Page Title</title>
+        <meta name="description" content="Your meta description here" />
+        {/* Add any other meta tags, CSS, or scripts you need in the <head></head> section */}
+      </Head>
+      <ThirdwebProvider activeChain={activeChain}>
+        <ChakraProvider>
+          <Navbar />
+          <Component {...pageProps} />
+        </ChakraProvider>
+      </ThirdwebProvider>
+    </>
   );
 }
 
