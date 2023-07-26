@@ -8,6 +8,7 @@ import PrizeNFT from "../components/PrizeNFT";
 import { useState } from "react";
 import CurrentEntries from "../components/CurrentEntries";
 import Link from "next/link";
+import MetaPixel from "../const/metaPixel"
 
 
 const Home: NextPage = () => {
@@ -70,6 +71,7 @@ const Home: NextPage = () => {
             <Text fontSize={"xl"}>Buy entries for a chance to win the NFT! The winner will be selected and transferred the NFT and a cash prize. The more entries the higher chance you have of winning the prize.</Text>
 
             <Box>
+              <MetaPixel />
               <Link href={"https://zealy.io/c/heroesbattlearena"}>
                 <Text fontSize={"xl"} fontWeight={"bold"}>Add your wallet in Zealy</Text>
               </Link>
