@@ -47,6 +47,9 @@ const Home: NextPage = () => {
   }
 
   return (
+    <Head>
+                <title>Index Page</title>
+    </Head>
     <Container maxW={"1440px"}>
       <SimpleGrid columns={2} spacing={4} minH={"60vh"}>
         <Flex justifyContent={"center"} alignItems={"center"}>
@@ -136,17 +139,4 @@ const Home: NextPage = () => {
   );
 };
 
-//export default Home;
-export default Home() {
-  return (
-    <div>
-      <Head>
-        <title>This page has a title 🤔</title>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-
-      <h1>This page has a title 🤔</h1>
-    </div>
-  )
-}
+export default Home;
