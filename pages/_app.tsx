@@ -14,9 +14,26 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         {/* Add your meta tags, title, etc. within the Head component */}
         <title>Buy & Win with Heroes Battle Arena</title>
-        <meta name="description" content="Heroes Battle Arena Game and Raffle" />
+        <meta name="description" content="Your meta description here" />
         <meta name="facebook-domain-verification" content="7qvotamngngrhn1rkyicuwcbn8r3y6" />
         {/* Add any other meta tags, CSS, or scripts you need in the <head></head> section */}
+        {/* Include the Facebook Pixel code directly in the head */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '835022581502548');
+              fbq('track', 'PageView');
+            `,
+          }}
+        />
       </Head>
       <ThirdwebProvider activeChain={activeChain}>
         <ChakraProvider>
@@ -24,10 +41,10 @@ function MyApp({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
         </ChakraProvider>
       </ThirdwebProvider>
-      {/* Include the facebook-pixel.html */}
-      <NextScript strategy="lazyOnload" src="/facebook-pixel.html" />
+      <NextScript strategy="lazyOnload" />
     </>
   );
 }
 
 export default MyApp;
+
