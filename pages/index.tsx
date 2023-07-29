@@ -49,7 +49,7 @@ const Home: NextPage = () => {
   return (
     <Container maxW={"1440px"}>
     <Head>
-                <title>Index Page</title>
+                <title>Heroes Battle Arena Raffle</title>
     </Head>
       <SimpleGrid columns={2} spacing={4} minH={"60vh"}>
         <Flex justifyContent={"center"} alignItems={"center"}>
@@ -67,7 +67,7 @@ const Home: NextPage = () => {
         <Flex justifyContent={"center"} alignItems={"center"} p={"5%"}>
           <Stack spacing={10}>
             <Box>
-              <Text fontSize={"xl"}>Heroes Battle Arena Raffle</Text>
+              <Text fontSize={"xl"}>Heroes Battle Arena Raffle: Week 1 28.07 - 04.08 20:00 UTC</Text>
               <Text fontSize={"4xl"} fontWeight={"bold"}>Buy a ticket to win the NFT and Cash Prizes!</Text>
             </Box>
             
