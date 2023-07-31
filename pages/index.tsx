@@ -67,7 +67,7 @@ const Home: NextPage = () => {
         <Flex justifyContent={"center"} alignItems={"center"} p={"5%"}>
           <Stack spacing={10}>
             <Box>
-              <Text fontSize={"xl"}>Heroes Battle Arena Raffle: Week 1 28.07 - 04.08 20:00 UTC</Text>
+              <Text fontSize={"xl"}>Heroes Battle Arena Raffle: Week 1 28.07 - 17.08 20:00 UTC</Text>
               <Text fontSize={"4xl"} fontWeight={"bold"}>Buy a ticket to win the NFT and Cash Prizes!</Text>
             </Box>
             
